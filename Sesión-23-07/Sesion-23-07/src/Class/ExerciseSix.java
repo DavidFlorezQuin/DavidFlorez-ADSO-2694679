@@ -10,15 +10,14 @@ import Abstract.ExerciseBase;
  *
  * @author Desarrollador
  */
-public class ExerciseFive extends ExerciseBase{
+public class ExerciseSix extends ExerciseBase{
 
     @Override
     public Double logic() {
-        if(this.getNumero()>200){
-            return 1.0;
-        }else{
-            return 0.0;
-        }
+        if (this.getNumero() > 50 || this.getNumero() < 100){
+        return 1.0;
+    }else
+        return 0.0;
     }
 
     @Override
@@ -26,11 +25,10 @@ public class ExerciseFive extends ExerciseBase{
         Double resultado = logic();
         
         if (resultado == 1.0){
-            return "El numero es mayor a doscientos";
+            return "El numero está dentro del rango de 50 y 100";
         }else {
-            return "El numero es mejor a doscientos";
+            return "El numero NO esta dentro del rango";
         }
-
     }
     
 }

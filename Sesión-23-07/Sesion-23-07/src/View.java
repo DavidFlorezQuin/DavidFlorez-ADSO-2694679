@@ -1,6 +1,8 @@
 
+import Class.ExerciseFive;
 import Class.ExerciseFour;
 import Class.ExerciseOne;
+import Class.ExerciseSix;
 import Class.ExerciseThree;
 import Class.ExerciseTwo;
 import java.util.Scanner;
@@ -41,6 +43,20 @@ public class View {
                 obj3.capture();
                 obj3.logic();
                 System.out.println(obj3.message());
+                break;
+            case 5:
+                ExerciseFive obj4 = new ExerciseFive();
+                obj4.setMensaje("Digite un numero Real");
+                obj4.capture();
+                obj4.logic();
+                System.out.println(obj4.message());
+                break;
+            case 6:
+                ExerciseSix obj5 = new ExerciseSix();
+                obj5.setMensaje("Digite un numero Real");
+                obj5.capture();
+                obj5.logic();
+                System.out.println(obj5.message());
                 break;
 
                 
