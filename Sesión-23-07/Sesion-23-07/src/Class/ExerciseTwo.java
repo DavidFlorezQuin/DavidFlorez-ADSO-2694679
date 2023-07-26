@@ -4,22 +4,37 @@
  */
 package Class;
 
-import Interface.Exercise;
+import Abstract.ExerciseBase;
+import java.util.Scanner;
 
 /**
  *
  * @author david
  */
-    public class ExerciseTwo implements Exercise{
+public class ExerciseTwo extends ExerciseBase {
+
+
 
     @Override
-    public Double Capturar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Double logic() {
+        this.setResultado(Math.pow(this.getNumero(), 2));
+        
+        if(this.getResultado()>5000){
+            return 1.0;
+        }else {
+            return 0.0;
+        }
+
     }
 
     @Override
-    public String logic() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String message() {
+        Double Resultado = logic();
+            if (Resultado == 1.0){
+                return "Su cuadrado es "+this.getResultado()+" y es mayor a 5000";
+            }else{
+                return "Su cuadrado es "+this.getResultado()+" y no es mayor a 5000";
+            }
     }
-    
+
 }

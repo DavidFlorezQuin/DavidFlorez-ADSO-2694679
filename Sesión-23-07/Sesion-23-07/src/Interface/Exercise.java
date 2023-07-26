@@ -3,7 +3,8 @@ package Interface;
 
 public interface Exercise {
     
-    public Double Capturar();
-    public String logic();
+    public Double capture();
+    public Double logic();
+    public String message();
     
 }
