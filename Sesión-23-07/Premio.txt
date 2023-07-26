@@ -1,4 +1,4 @@
-1.3.2.	Leer un real e imprimir si el número es mayor a 5.
+	1.3.2.	Leer un real e imprimir si el número es mayor a 5.
 1.3.3.	Leer un real e imprimir si su cuadrado es mayor a 5000.
 1.3.4.	Leer un real e imprimir su valor absoluto.
 1.3.5.	Leer un real e imprimir si el número es positivo o negativo.

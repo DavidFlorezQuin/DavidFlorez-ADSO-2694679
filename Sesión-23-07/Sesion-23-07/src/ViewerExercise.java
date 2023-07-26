@@ -1,16 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package View;
 
-import Class.Ejercicios.ExerciseNumberOne;
+import Class.ExerciseOne;
 import java.util.Scanner;
 
-/**
- *
- * @author Desarrollador
- */
 public class ViewerExercise {
 
     public static void main(String[] args) {
@@ -21,8 +12,11 @@ public class ViewerExercise {
 
         switch (opcion) {
             case 1:
-                ExerciseNumberOne obj = new ExerciseNumberOne();
-                obj.ComparateNumber();
+                ExerciseOne obj = new ExerciseOne();
+                obj.setMensaje("Digite un numero Real");
+                obj.Capturar();
+                String resultado = obj.logic(); // Almacenar el resultado del método logic()
+                System.out.println(resultado); // Imprimir el resultado
                 break;
 
             default:
