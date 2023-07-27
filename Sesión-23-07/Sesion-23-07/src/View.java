@@ -1,8 +1,12 @@
 
+import Class.ExerciseEight;
 import Class.ExerciseFive;
 import Class.ExerciseFour;
+import Class.ExerciseNine;
 import Class.ExerciseOne;
+import Class.ExerciseSeven;
 import Class.ExerciseSix;
+import Class.ExerciseTen;
 import Class.ExerciseThree;
 import Class.ExerciseTwo;
 import java.util.Scanner;
@@ -57,6 +61,34 @@ public class View {
                 obj5.capture();
                 obj5.logic();
                 System.out.println(obj5.message());
+                break;
+            case 7:
+                ExerciseSeven obj6 = new ExerciseSeven();
+                obj6.setMensaje("Digite un numero Real");
+                obj6.capture();
+                obj6.logic();
+                System.out.println(obj6.message());
+                break;
+            case 8:
+                ExerciseEight obj7 = new ExerciseEight();
+                obj7.setMensaje("Digite un numero Real");
+                obj7.capture();
+                obj7.logic();
+                System.out.println(obj7.message());
+                break;
+            case 9:
+                ExerciseNine obj8 = new ExerciseNine();
+                obj8.setMensaje("Digite un numero Real");
+                obj8.capture();
+                obj8.logic();
+                System.out.println(obj8.message());
+                break;
+            case 10:
+                ExerciseTen obj9 = new ExerciseTen();
+                obj9.setMensaje("Digite un numero Real");
+                obj9.capture();
+                obj9.logic();
+                System.out.println(obj9.message());
                 break;
 
                 

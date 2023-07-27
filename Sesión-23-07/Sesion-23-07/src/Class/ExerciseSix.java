@@ -14,7 +14,7 @@ public class ExerciseSix extends ExerciseBase{
 
     @Override
     public Double logic() {
-        if (this.getNumero() > 50 || this.getNumero() < 100){
+        if (this.getNumero() > 50 && this.getNumero() < 100){
         return 1.0;
     }else
         return 0.0;

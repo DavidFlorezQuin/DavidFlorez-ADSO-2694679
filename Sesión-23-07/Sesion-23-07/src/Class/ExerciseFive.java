@@ -28,7 +28,7 @@ public class ExerciseFive extends ExerciseBase{
         if (resultado == 1.0){
             return "El numero es mayor a doscientos";
         }else {
-            return "El numero es mejor a doscientos";
+            return "El numero es menor a doscientos";
         }
 
     }
