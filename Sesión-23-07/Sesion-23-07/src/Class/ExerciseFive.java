@@ -12,6 +12,7 @@ import Abstract.ExerciseBase;
  */
 public class ExerciseFive extends ExerciseBase{
 
+    
     @Override
     public Double logic() {
         if(this.getNumero()>200){

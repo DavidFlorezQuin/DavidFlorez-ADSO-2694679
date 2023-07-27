@@ -11,29 +11,33 @@ import Abstract.ExerciseBase;
  * @author Desarrollador
  */
 public class ExerciseTen extends ExerciseBase{
-    
 
-    Double numero1 = this.getNumero(); 
-    Double numero2 = this.getNumero(); 
-    
     @Override
     public Double logic() {
-        if (numero1 > numero2){
-            return 1.0;
-        }else {
-            return 0.0;
+        Double num1 = this.getNumero(); // Ya hemos capturado el primer número
+        Double num2 = this.capture(); // Capturamos el segundo número
+
+        // Comparar los números
+        if (num1 > num2) {
+            return 1.0; // El primer número es mayor que el segundo
+        } else if (num1 < num2) {
+            return 0.0; // El primer número es menor que el segundo
+        } else {
+            return -1.0; // Los números son iguales
         }
     }
 
     @Override
     public String message() {
-        Double resultado = logic();
-        if (resultado == 1.0){
-            return "El primer numero es mayor al segundo";
-        }else{
-            return "El segundo numero numero es mayor al primero";
-
+        double resultado = logic();
+        if (resultado == 1.0) {
+            return "El primer número es mayor";
+        } else if (resultado == 0.0) {
+            return "El segundo numero es el mayor.";
+        } else {
+            return "Los números son iguales.";
         }
     }
-    
 }
+
+   
