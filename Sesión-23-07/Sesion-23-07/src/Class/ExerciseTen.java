@@ -13,10 +13,12 @@ import Abstract.ExerciseBase;
 public class ExerciseTen extends ExerciseBase{
     
 
-        Double numero2 = this.capture(); // Segunda llamada al método capture()
+    Double numero1 = this.getNumero(); 
+    Double numero2 = this.getNumero(); 
+    
     @Override
     public Double logic() {
-        if (this.getNumero()>numero2){
+        if (numero1 > numero2){
             return 1.0;
         }else {
             return 0.0;

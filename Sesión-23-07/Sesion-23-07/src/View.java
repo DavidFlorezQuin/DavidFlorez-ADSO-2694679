@@ -87,6 +87,7 @@ public class View {
                 ExerciseTen obj9 = new ExerciseTen();
                 obj9.setMensaje("Digite un numero Real");
                 obj9.capture();
+                obj9.capture();
                 obj9.logic();
                 System.out.println(obj9.message());
                 break;
